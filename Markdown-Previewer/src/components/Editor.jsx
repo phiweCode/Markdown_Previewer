@@ -1,9 +1,7 @@
-import React, {useCallback, useMemo, useRef, useEffect } from 'react'
+import React from 'react'
 
 function Editor({markdownTxt, handleTextInput })
 {
-
-
   const onInputChange = (e) =>
     {
       e.preventDefault()

@@ -109,6 +109,13 @@ textarea.markdown-input {
   padding: 2vh 3vw;
 }
 
+#plain {
+  border: none;
+}
+
+div.e-split-bar-horizontal::after, div.e-split-bar-horizontal::before{
+  background-color: rgba(2, 30, 63, 0.459)
+}
 
 
 
