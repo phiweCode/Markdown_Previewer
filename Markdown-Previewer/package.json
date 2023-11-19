@@ -15,6 +15,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "@syncfusion/ej2-react-layouts": "^23.1.36",
+    "@syncfusion/ej2-react-navigations": "^23.1.44",
     "bootstrap": "^5.3.2",
     "marked": "^9.1.5",
     "prettier": "^3.0.3",

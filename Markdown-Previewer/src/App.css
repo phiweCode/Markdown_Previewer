@@ -1,11 +1,20 @@
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-react-navigations/styles/material.css';
 
 :root{
 --ff-mono: ui-monospace, 'SFMono-Regular', 'SF Mono', 'Menlo', 'Consolas',
 'Liberation Mono', monospace;
 
+ --primary-bg-color: #000914;
+
 word-break: break-word;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 code,
@@ -69,7 +78,7 @@ pre {
 
 .inner-container {
   width: 100%;
-  background-color: #000914;
+  background-color: var(--primary-bg-color);
   overflow: hidden;
 }
 
@@ -83,7 +92,7 @@ pre {
 
 textarea.markdown-input {
 
-  background-color: #000914;
+  background-color: var(--primary-bg-color);
   color: white;
   padding: 2vh 3vw;
   border: white;
@@ -96,16 +105,16 @@ textarea.markdown-input {
 
 .markdown {
   overflow-y: auto;
-  background-color: #000914;
+  background-color: var(--primary-bg-color);
   color: white;
   height: 90vh;
-  padding: 6vh 6vh;
+  padding: 2vh 1vw;
   width: 45vw;
   border-radius: 5px;
 }
 .markdown-previewer{
   color: white;
-  background-color: #000914;
+  background-color: var(--primary-bg-color);
   padding: 2vh 3vw;
 }
 
@@ -117,6 +126,52 @@ div.e-split-bar-horizontal::after, div.e-split-bar-horizontal::before{
   background-color: rgba(2, 30, 63, 0.459)
 }
 
+.headers {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: start;
+  background-color: var(--primary-bg-color) !important;
+  color: white;
+  padding: 2vh 2vw;
+  padding-left: 7vw;
+
+}
+
+.headers div input, .headers div label {
+  outline: none !important;
+  color: aliceblue;
+  border: none;
+  border-radius: 0 !important;
+  background-color: var(--primary-bg-color) !important;
+}
+
+.e-tab-text{
+  color: white;
+}
+
+.e-tab-text::hover{
+  color: tomato !important;
+}
+
+
+@media only screen and (max-width:930px)
+{
+ .row.inner-container {
+  padding: 0px !important;
+  box-sizing: border-box;
+ }
+
+ #plain {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  padding: 10px;
+ }
+
+
+}
 
 
 

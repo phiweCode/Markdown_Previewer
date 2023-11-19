@@ -10,7 +10,7 @@ function FileUpload({markdownText}) {
       const reader = new FileReader()
 
       reader.onload = (e) => {
-        const fileContent = e.target.result
+        const fileContent = e.target.result;
         console.log('File content', fileContent)
         markdownText(fileContent)
       }
@@ -23,7 +23,11 @@ function FileUpload({markdownText}) {
 
   return (
     <>
-      <input type="file" accept=".md" onChange={handleFileChange} />
+      <div className="input-group input-group-sm text-bg-dark">
+        <label className="input-group-text text-bg-dark " htmlFor="inputGroupFile01">Upload Your Markdown file</label>
+        <input type="file" className="form-control bg-success" id="inputGroupFile01"  accept='.md' onChange={handleFileChange}/>
+      </div>
+
       {formatError ? (<div
         className="toast align-items-center text-bg-primary border-0"
         role="alert"
@@ -31,7 +35,7 @@ function FileUpload({markdownText}) {
         aria-atomic="true"
       >
         <div className="d-flex">
-          <div className="toast-body">Hello, world! This is a toast message.</div>
+          <div className="toast-body ">Hello, world! This is a toast message.</div>
           <button
             type="button"
             className="btn-close btn-close-white me-2 m-auto"
@@ -40,6 +44,8 @@ function FileUpload({markdownText}) {
           ></button>
         </div>
       </div>):''}
+
+
     </>
   )
 }
