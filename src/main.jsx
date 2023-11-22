@@ -6,7 +6,7 @@ import './scss/style.scss'
 
 import { registerLicense } from '@syncfusion/ej2-base';
 
-registerLicense(import.meta.env.TOOLS_KEY);
+registerLicense(import.meta.env.TOOLS_KEY );
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
