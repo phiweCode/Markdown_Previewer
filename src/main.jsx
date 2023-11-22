@@ -6,11 +6,10 @@ import './scss/style.scss'
 
 import { registerLicense } from '@syncfusion/ej2-base';
 
-registerLicense(import.meta.env.TOOLS_KEY );
+registerLicense('Ngo9BigBOggjHTQxAR8/V1NHaF1cWWhIfEx1RHxQdld5ZFRHallYTnNWUj0eQnxTdEZiWH1ccXNQQ2RcVE1/WA==');
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-
     <App />
   </React.StrictMode>,
 )
