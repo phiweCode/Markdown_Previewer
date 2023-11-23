@@ -6,7 +6,9 @@ import './scss/style.scss'
 
 import { registerLicense } from '@syncfusion/ej2-base';
 
-registerLicense('Ngo9BigBOggjHTQxAR8/V1NHaF1cWWhIfEx1RHxQdld5ZFRHallYTnNWUj0eQnxTdEZiWH1ccXNQQ2RcVE1/WA==');
+registerLicense(`${import.meta.env.VITE_TOOLS}`);
+
+console.log(import.meta.env.VITE_TOOLS)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

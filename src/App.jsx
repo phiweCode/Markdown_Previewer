@@ -32,6 +32,7 @@ function App() {
 
   useEffect(()=>{
     console.log(mediaQuery)
+    console.log(import.meta.env.VITE_TOOLS)
     handleMediaQueryChange()
     window.addEventListener('resize',handleMediaQueryChange)
   }, [])
