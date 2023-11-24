@@ -6,7 +6,7 @@ import './scss/style.scss'
 
 import { registerLicense } from '@syncfusion/ej2-base';
 
-registerLicense(`${import.meta.env.VITE_TOOL}`);
+registerLicense(import.meta.env.VITE_TOOL);
 
 console.log(import.meta.env.VITE_TOOL)
 
