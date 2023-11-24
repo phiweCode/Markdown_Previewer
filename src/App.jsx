@@ -32,10 +32,10 @@ function App() {
 
   useEffect(()=>{
     console.log(mediaQuery)
-    console.log(import.meta.env.VITE_TOOLS)
+    console.log(import.meta.env.VITE_TOOL)
     handleMediaQueryChange()
     window.addEventListener('resize',handleMediaQueryChange)
-  }, [])
+  }, [markdown])
 
   const handleInput = (e) => {
       setMarkdown(e)
