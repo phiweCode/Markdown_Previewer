@@ -19,6 +19,9 @@ body {
     margin: 0;
 }
 
+svg {
+    pointer-events: none;
+}
 p > img {
     width: 100%;
 }

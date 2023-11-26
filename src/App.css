@@ -119,14 +119,18 @@ textarea.markdown-input {
 }
 
 #plain {
-  border: none;
+  border: 1px solid rgb(182, 177, 177);
+  border-radius: 10px;
+  margin-top: 2em;
 }
 
 div.e-split-bar-horizontal::after, div.e-split-bar-horizontal::before{
   background-color: rgba(2, 30, 63, 0.459)
 }
 
+
 .headers {
+  position: flxed;
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -154,11 +158,49 @@ div.e-split-bar-horizontal::after, div.e-split-bar-horizontal::before{
   color: tomato !important;
 }
 
+#split-view.active , #tab-view.active {
+  background-color: #DC3545;
+}
+
+#split-view , #tab-view{
+color: white;
+border: none;
+}
+
+/* Hide the default file input button */
+input[type="file"] {
+  display: none;
+}
+
+/* Style the custom file input container */
+.label-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+/* Style the custom button that looks like an icon */
+.custom-button {
+  background-color: #3498db !important;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Position the file input over the custom button */
+input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
 
 @media only screen and (max-width:930px)
 {
  .row.inner-container {
-  padding: 0px !important;
+
   box-sizing: border-box;
  }
 
@@ -168,6 +210,10 @@ div.e-split-bar-horizontal::after, div.e-split-bar-horizontal::before{
   align-content: center;
   justify-content: center;
   padding: 10px;
+ }
+
+ .inner-container {
+  padding: 2vw 3vh !important;
  }
 
 
